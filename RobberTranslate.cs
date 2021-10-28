@@ -17,13 +17,10 @@ namespace Robber_translator
             for (int i = 0; i < phrase.Length; i++)
             {
                 char letter = phrase[i];
+                output += letter;
                 if (consonants.Contains(letter))
                 {
-                    output += letter + "o" + letter;
-                }
-                else
-                {
-                    output += letter;
+                    output += "o" + letter;
                 }
             }
 
